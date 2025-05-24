@@ -1,7 +1,5 @@
 .env
 
-.env.example
-
 /oldView/
 
 /vendor/

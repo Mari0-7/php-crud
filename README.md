@@ -10,6 +10,6 @@ A simple PHP code using the MVC strcuture to perform user CRUD operations using 
 
 More features concerning the backend will be added regularly with increased security and better structure.
 
-###To run this code locally simply use the followig command in the terminal of your main directory after running docker  
->  `cd ./docker`
+### To run this code locally simply use the followig command in the terminal of your main directory after running docker  
+>  `cd ./docker`  
 >  `docker-compose up`

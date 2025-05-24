@@ -1,0 +1,152 @@
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      padding: 2rem;
+      max-width: 900px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .nav-steps {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.5rem;
+      color: #aaa;
+      font-weight: 500;
+    }
+
+    .nav-steps div.active {
+      color: #2c78b8;
+      border-bottom: 2px solid #2c78b8;
+      padding-bottom: 0.25rem;
+    }
+
+    .main-content {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .card-preview {
+      background: linear-gradient(to right, #2c78b8, #3baecf);
+      color: white;
+      border-radius: 12px;
+      width: 300px;
+      height: 180px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-preview .chip {
+      width: 40px;
+      height: 30px;
+      background: #ccc;
+      border-radius: 4px;
+    }
+
+    .card-preview .number {
+      letter-spacing: 2px;
+      font-size: 1.2rem;
+    }
+
+    .card-preview .bottom {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+    }
+
+    .form-area {
+      flex: 1;
+    }
+
+    .form-area h2 {
+      margin-bottom: 1rem;
+      color: #222;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.7rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .pay-btn {
+      margin-top: 1rem;
+      padding: 0.9rem;
+      width: 100%;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      background: linear-gradient(to right, #2c78b8, #3baecf);
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .pay-btn:hover {
+      background: linear-gradient(to right, #246095, #339ab4);
+    }
+
+    .back-link {
+      color: #2c78b8;
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card-preview {
+        width: 100%;
+      }
+
+      .form-area {
+        width: 100%;
+      }
+    }

@@ -1,0 +1,9 @@
+.env
+
+/oldView/
+
+/vendor/
+
+/docker/nginx/
+
+/docker/storage/

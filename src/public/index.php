@@ -23,10 +23,6 @@ $router = new Router();
 $router
     ->get('/',[Home::class, 'index'])
     ->post('/', [Home::class, 'index'])
-    // ->get('/invoices', [Invoice::class, 'index'])
-    // ->post('/invoices', [Invoice::class, 'index'])
-    // ->get('/invoices/create', [Invoice::class, 'create'])
-    // ->post('/invoices/create', [Invoice::class, 'create'])
     ->get('/signup', [Signs::class, 'signupView'])
     ->post('/signup', [Signs::class, 'signup'])
     ->get('/login', [Signs::class, 'loginView'])
